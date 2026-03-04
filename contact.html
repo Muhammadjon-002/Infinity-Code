@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Infinity Code | Contact</title>
+    <link rel="stylesheet" href="./assets/sass/css/index.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        crossorigin="anonymous" />
+    <link rel="icon" type="image/png" href="./assets/img/base/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./assets/img/base/favicon.svg" />
+    <link rel="shortcut icon" href="./assets/img/base/favicon.ico" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="header__nav">
+                <a class="header__nav__logo" href="./index.html">
+                    <img src="./assets/img/base/logo.png" alt="">
+                </a>
+                <ul id="list" class="header__nav__list">
+                    <li class="item"><a href="./index.html">Home</a></li>
+                    <li class="item"><a href="./about.html">About Us</a></li>
+                    <li class="item"><a href="./gallery.html">Gallery</a></li>
+                    <li class="item"><a href="./contact.html">Contact</a></li>
+                </ul>
+                <button onclick="btnAct()" class="header__nav__btn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="us">
+            <div class="container">
+                <div class="us__content">
+                    <h2 class="us__content__title">Contact Us</h2>
+                    <form class="us__content__form" action="#">
+                        <fieldset>
+                            <legend class="title">Contact</legend>
+                            <div class="top">
+                                <label for="name">
+                                    Ismiz:
+                                    <input type="text" name="name" id="name" placeholder="Ismingizni kiriting..."
+                                        required>
+                                </label>
+                                <label for="last">
+                                    Familiyangiz:
+                                    <input type="text" name="last" id="last"
+                                        placeholder="Familiyangizni kiriting (Majburiy emas)">
+                                </label>
+                            </div>
+                            <div class="gender">
+                                <label for="men">
+                                    Erkak
+                                    <input type="radio" name="man" id="men" required>
+                                </label>
+                                <label for="woman">
+                                    Ayol
+                                    <input type="radio" name="man" id="woman" required>
+                                </label>
+                            </div>
+                            <div class="bottom">
+                                <p class="bottom__text">Darsni tanglang:</p>
+                                <select name="" id="">
+                                    <option value="">Front-End</option>
+                                    <option value="">Back-End</option>
+                                    <option value="" selected>Kiberxavfsizlik</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn">Yuborish</button>
+                        </fieldset>
+                    </form>
+                    <div class="location">
+                        <h2 class="location__title">Bizning Joyalshuvimiz</h2>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6040.851996168884!2d72.3464313!3d40.7966317!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38bceb95e0602555%3A0x5dc97640f8800a32!2sMUHAMMAD%20AL-KHORAZMI%20SPECIALIZED%20SCHOOL%20ANDIJAN%20BRANCH!5e0!3m2!1sru!2s!4v1772550986008!5m2!1sru!2s"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>

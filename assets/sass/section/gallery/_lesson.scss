@@ -1,0 +1,61 @@
+.lesson {
+    // margin-top: 80px;
+    padding: 100px 0;
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        // align-items: flex-start;
+        &__title {
+            @include title(900, $text)
+        }
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            .item {
+                min-width: 500px;
+                flex: 1;
+                &__img {
+                    width: 100%;
+                    box-shadow: 0 0 2px 1px $title;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                &__text {
+                    @include text(500, $text)
+                }
+                @media (max-width:1199px) {
+                    min-width: 300px;
+                }
+            }
+        }
+        &__bottom {
+            text-align: center;
+            .link {
+                @include text(500, $link);
+                padding: 10px 15px;
+                border: 2px solid $link;
+                transition: all .3s ease;
+                .design {
+                    width: 20px;
+                    height: 20px;
+                    background-color: $link;
+                    color: $black;
+                    border-radius: 50%;
+                    font-size: 16px;
+                }
+                &:hover {
+                    background-color: $link;
+                    color: $black;
+                }
+                &:hover span {
+                    background-color: $black;
+                    color: $link;   
+                }
+            }
+        }
+    }
+}

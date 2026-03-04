@@ -1,0 +1,32 @@
+.subject {
+    padding: 50px 0;
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        &__title {
+            @include title(900, $title);
+        }
+        &__elements {
+            overflow-x: auto;
+            .table {
+                width: 100%;
+                border-collapse: collapse ;
+                tr {
+    
+                    th {
+                        @include text(500, $text);
+                        text-align: center;
+                        padding: 10px;
+                    }
+                    td {
+                        @include text16(400, $text);
+                        text-align: center;
+    
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,52 @@
+@mixin text($weight, $color) {
+    font-size: 18px;
+    font-weight: $weight;
+    color: $color;
+    @media (max-width:575px) {
+        font-size: 15px;
+    }
+}
+@mixin subtitle($weight, $color) {
+    font-size: 18px;
+    font-weight: $weight;
+    color: $color;
+    @media (max-width:767px) {
+        font-size: 15px;
+    }
+}
+@mixin title($weight, $color) {
+    font-size: 50px;
+    font-weight: $weight;
+    color: $color;
+    @media (max-width:991px) {
+        font-size: 50px;
+    }
+    @media (max-width:575px) {
+        font-size: 30px;
+    }
+}
+@mixin text16($weight, $color) {
+    font-size: 16px;
+    font-weight: $weight;
+    color: $color;
+    @media (max-width:575px) {
+        font-size: 14px;
+    }
+}
+
+@mixin price($weight, $color) {
+    font-size: 24px;
+    font-weight: $weight;
+    color: $color;
+    @media (max-width:575px) {
+        font-size: 18px;
+    }
+}
+@mixin before($weight, $color) {
+    font-size: 20px;
+    font-weight: $weight;
+    color: $color;
+    @media (max-width:575px) {
+        font-size: 16px;
+    }
+}
