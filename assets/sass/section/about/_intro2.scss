@@ -89,6 +89,11 @@
                     flex-direction: column;
                 }
             }
+            &:nth-child(4) {
+                @media (max-width:991px) {
+                    flex-direction: column;
+                }
+            }
         }
     }
 
