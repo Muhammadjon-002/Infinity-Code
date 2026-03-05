@@ -1,0 +1,39 @@
+.numbers {
+    padding: 50px 0;
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        &__title {
+            @include title(900, $title)
+        }
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            .item {
+                min-width: 250px;
+                flex: 1;
+                background-color: #F0EDFF;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                padding: 100px 20px;
+                border-radius: 20px;
+                &__design {
+                    @include number(900, $black);
+                }
+                &__text {
+                    @include text(500, $black);
+                }
+                @media(max-width:575px) {
+                    padding: 80px 20px;
+                }
+                &:nth-child(2) {
+                    background-color: #D4FAE6;
+                }
+            }
+        }
+    }
+}
